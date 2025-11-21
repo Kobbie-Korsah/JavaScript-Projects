@@ -1,0 +1,74 @@
+<title>Developer Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" /><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Blog</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1>My Developer Blog</h1>
+    <p>A real blog application to showcase professional development work.</p>
+  </header>
+
+  <main>
+
+    <!-- Blog Form Section -->
+    <section class="form-section">
+      <div id="edit-mode-banner" class="edit-mode-banner">
+        ✏️ Editing Mode - Update your blog post below
+      </div>
+      
+      <h2 id="form-title">Create a New Blog Post</h2>
+
+      <div id="blog-form">
+        
+        <div class="input-group">
+          <label for="title">Blog Title</label>
+          <input type="text" id="title" placeholder="Enter blog title..." />
+        </div>
+
+        <div class="input-group">
+          <label for="author">Author</label>
+          <input type="text" id="author" placeholder="Your name" />
+        </div>
+
+        <div class="form-row">
+          <div class="input-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" />
+          </div>
+
+          <div class="input-group">
+            <label for="time">Time</label>
+            <input type="time" id="time" />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="content">Blog Content</label>
+          <textarea id="content" rows="6" placeholder="Write your blog here..."></textarea>
+        </div>
+
+        <button type="button" class="btn-submit" id="submit-btn">Publish Blog</button>
+      </div>
+
+    </section>
+
+    <!-- Blog Display Section -->
+    <section class="blog-list-section">
+      <h2>All Blog Posts (<span id="post-count">0</span>)</h2>
+      <div id="blog-list" class="blog-container"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
